@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 
+        Authors: Runa A. Sandvik, Nima Fatemi.
+        Version: 1.0
+     -->
+    <meta charset="utf-8">
+    <title>Tor User Manual</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Tor, manual, how-to, short-user-manul, The Onion Routing, TBB, Tor Browser Bundle">
+    <meta name ="description" content="This manual contains information on how to download, verify and use Tor Browser Bundle">
+</head>
+<body>
+
+<!-- 
+
+TODO:
+    1- Verification: sig and hash
+    2- TBB3
+    3- How to download if tpo is blocked.
+    4- add need to contact a human section
+    5- add style
+
+ -->
+
+<h1 id="tor-user-manual">Tor User Manual</h1>
+Contact: <a href="mailto:help@rt.torproject.org">help@rt.torproject.org</a>, available in Arabic, English, Farsi, French, Mandarin, and Spanish<br />
+Version: 1.0</p>
+
+<hr />
+
+<h4>Table of Contents</h4>
+<dl>
+    <a href="#introduction">1. Introduction</a><br />
+    <a href="#how-tor-works">2. How Tor works</a><br />
+    <a href="#how-to-download-tor">3. How to download Tor</a><br />
+    <a href="#how-to-use-tor">4. How to use Tor</a><br /> 
+    <a href="#how-to-upgrade-tor">5. How to upgrade Tor</a><br />
+    <a href="#what-to-do-when-tor-does-not-connect">6. What to do when Tor does not connect</a><br />
+    <a href="#an-introduction-to-tor-bridges">7. An introduction to Tor bridges</a><br />
+    <a href="#frequently-asked-questions">8. Frequently Asked Questions</a><br />
+    <ul>
+        <a href="#vidalia-asks-for-a-password">8.1 Vidalia asks for a password</a><br />
+        <a href="#flash-does-not-work">8.2 Flash does not work</a><br />
+        <a href="#i-want-to-use-another-browser">8.3 I want to use the browser I normally use</a><br />
+        <a href="#why-tor-is-slow">8.4 Why Tor is slow</a><br />
+    </ul>
+</dl>
+
+<h2><a id="introduction"></a>1. Introduction</h2>
+<p>This manual contains information about how to download the Tor
+Browser Bundle and use it to browse the Internet, as well as information
+about what you can do if Tor is unable to connect to the network. If you
+can't find the answer to your question in this document, contact the
+Tor help desk at <code><a
+href="mailto:help@rt.torproject.org">help@rt.torproject.org</a></code>. The
+help desk is run by a dedicated team of Tor Project members who will
+respond to your questions as quickly as possible.</p>
+
+<h2 id="how-tor-works">2. How Tor works</h2>
+<p>Tor is a network of virtual tunnels that allows you to improve your
+privacy and security on the Internet. Tor works by sending your traffic
+through three random servers (also known as <em>relays</em>) in the Tor
+network, before the traffic is sent out onto the public Internet.</p>
+<p>The image above illustrates browsing to different websites over Tor.
+The green monitors represent relays in the Tor network, while the three
+keys represent the layers of encryption between your computer and each
+relay.</p>
+<p>Tor will anonymize the origin of your traffic, encrypt everything
+between your computer and the Tor network, and encrypt your traffic
+inside the Tor network. However, Tor will not encrypt your traffic
+between the Tor network and its final destination.</p>
+<p>If you are communicating sensitive information, for example when
+logging on to a website with a username and password, make sure that you
+are using HTTPS (e.g.
+<code><strong>https</strong>://torproject.org/</code>, not
+<code><strong>http</strong>://torproject.org/</code>).</p>
+
+<h2 id="how-to-download-tor">3. How to download Tor</h2>
+<p>The package we recommend to most users is the <a
+href="https://www.torproject.org/projects/torbrowser.html">Tor Browser
+Bundle</a>. However, if you are in a country where Tor is likely to be
+blocked, you may want to get the <a
+href="https://www.torproject.org/docs/pluggable-transports.html.en">Pluggable
+Transports Tor Browser Bundle</a> instead.</p>
+
+<p>Both bundles contain a browser preconfigured for use with Tor and are
+easy to get started with: download one of the packages to your Desktop,
+extract the archive in the same place, and start Tor. The software will
+do the job of connecting you to the network and to the over 4000 relays
+around the world.</p>
+
+<p>You can download the Tor Browser Bundle and the Pluggable Transports
+Tor Browser Bundle from our website by clicking on the links above. If
+you are unable to access our website, please contact the Tor help desk
+at <code><a
+href="mailto:help@rt.torproject.org">help@rt.torproject.org</a></code>
+for a list of website mirrors that you can use instead.</p>
+
+<p>Our software is also available for Android-based phones, tablets, and
+computers from <a href="https://guardianproject.info/">The Guardian
+Project</a> in their <a
+href="https://guardianproject.info/2012/03/15/our-new-f-droid-app-repository/">F-Droid
+Repository</a> and in the <a
+href="https://play.google.com/store/search?q=guardianproject&amp;so=1&amp;c=apps">Google Play Store</a>.</p>
+
+<h2 id="how-to-use-tor">4. How to use Tor</h2>
+<p>After downloading and extracting the package onto your Desktop, you
+will be able to use Tor by running "Start Tor Browser" (or
+"start-tor-browser" on Linux). You will first see Vidalia, a control
+panel, start up and connect you to the network, followed by the Tor
+Browser confirming that you are now using Tor. This is done by
+displaying <a
+href="https://check.torproject.org/">https://check.torproject.org/</a>.
+You can now browse the Internet through Tor.</p>
+
+<p><b>NOTE: </b>The Tor Browser Bundle will not provide anonymity to any
+other software or browsers that you have installed or will install on
+your computer. You need to use the browser that comes with Tor.</p>
+
+<h2 id="how-to-upgrade-tor">5. How to upgrade Tor</h2>
+<p>The <a
+href="https://check.torproject.org/">https://check.torproject.org/</a>
+page will let you know when a new version of Tor is available. To
+upgrade Tor, do the following:</p>
+
+<ol>
+<li>Download the new version to the same place you downloaded the old one (your Desktop is a good place)</li>
+<li>If you are already running Tor, make sure you close the browser and Vidalia</li> 
+<li>Extract the new version and let it overwrite the old one</li>
+<li>Start Tor by running "Start Tor Browser" (or "start-tor-browser" on Linux)</li>
+</ol>
+
+<h2 id="what-to-do-when-tor-does-not-connect">6. What to do when Tor does not connect</h2>
+<p>In some cases, it will appear as if Vidalia is stuck when trying to
+connect to the network. If this happens, check the Vidalia message log
+for errors: open the Vidalia control panel, click on click on
+<em>Message Log</em> and select the <em>Advanced</em> tab. It may be
+that Tor won't connect because:</p>
+<p><strong>The system clock is off</strong>: Make sure that the date and
+time on your system is correct, for example by synchronizing the system
+clock with an Internet time server. Once that's done, restart Tor.</p>
+<p><strong>You are behind a restrictive firewall</strong>: To tell Tor
+to only try port 80 and port 443, open the Vidalia control panel, click
+on <em>Settings</em> and <em>Network</em>, and tick the box that says
+<em>My firewall only lets me connect to certain ports</em>.</p>
+<p><strong>Your anti-virus program is blocking Tor</strong>: Make sure
+that your anti-virus program is not preventing Tor from making network
+connections.</p>
+<p>If Tor still doesn't work, it's likely that your Internet Service
+Provider (ISP) is blocking Tor. Very often this can be worked around
+with <strong>Tor bridges</strong> (see below for more information).</p>
+<p>If you need help with figuring out why Vidalia is stuck, contact the
+Tor help desk at <code><a
+href="mailto:help@rt.torproject.org">help@rt.torproject.org</a></code>.</p>
+
+<h2 id="an-introduction-to-tor-bridges">7. An introduction to Tor bridges</h2>
+<p><a href="https://www.torproject.org/docs/bridges.html.en">Tor
+bridges</a> are hidden relays which make Tor more difficult to block. To
+use a bridge, you will first have to locate one; you can visit <a
+href="https://bridges.torproject.org/">https://bridges.torproject.org/</a>,
+or you can send an email to <code><a
+href="mailto:bridges@torproject.org">bridges@torproject.org</a></code>.
+If you decide to send an email, please make sure that you write
+<code><strong>get bridges</strong></code> in the body of the email.
+Without this, you will not get a reply.</p>
+
+<p>Configuring more than one bridge address will make your Tor
+connection more stable, in case some of the bridges become unreachable.
+There is no guarantee that the bridge you are using now will work
+tomorrow, so you should make a habit of updating your list of bridges
+every so often.</p>
+
+<p>Once you have a set of bridges to use, open the Vidalia control panel, click on <em>Settings</em>, <em>Network</em> and tick the box that says <em>My ISP blocks connections to the Tor network</em>. Enter the bridges in the box below, hit <em>OK</em> and start Tor again.</p>
+
+<h2 id="frequently-asked-questions">8. Frequently Asked Questions</h2>
+<p>This section will answer some of the most common questions. If your
+question is not mentioned here, please send an email to <code><a
+href="mailto:help@rt.torproject.org">help@rt.torproject.org</a></code>.</p>
+
+<h3 id="vidalia-asks-for-a-password">8.2 Vidalia asks for a password</h3>
+<p>You should not have to enter a password when starting Vidalia. If you are prompted for one, you are likely affected by one of these problems:</p>
+<p><strong>Vidalia and Tor are already running</strong>: For example, this situation can happen if you installed the Vidalia bundle and now you're trying to run the Tor Browser Bundle. In that case, you will need to close the old Vidalia and Tor before you can run this one.</p>
+<p><strong>Vidalia crashed, but left Tor running</strong>: If the dialog that prompts you for a control password has a Reset button, you can click the button and Vidalia will restart Tor with a new random control password. If you do not see a Reset button, or if Vidalia is unable to restart Tor for you; go into your process or task manager, and terminate the Tor process. Then use Vidalia to restart Tor.</p>
+
+<p>For more information, see the <a href="https://torproject.org/docs/faq.html#VidaliaPassword">FAQ</a> on the Tor Project website.</p>
+<h3 id="flash-does-not-work">8.3 Flash does not work</h3>
+<p>For security reasons, Flash, Java, and other plugins are currently
+disabled for Tor. Plugins operate independently from Firefox and can
+perform activity on your computer that ruins your anonymity.</p>
+<p>Most YouTube videos work with HTML5, and it is possible to view these videos over Tor.</p>
+
+<h3 id="i-want-to-use-another-browser">8.4 I want to use the browser I normally use</h3>
+<p>For security reasons, we recommend that you only browse the web through Tor using the Tor Browser Bundle. It is technically possible to use Tor with other browsers, but by doing so you open yourself up to potential attacks.</p>
+
+<h3 id="why-tor-is-slow">8.5 Why Tor is slow</h3>
+<p>Tor can sometimes be a bit slower than your normal Internet connection. After all, your traffic is sent through many different countries, sometimes across oceans around the world!</p>
+
+</body>
+</html>
